@@ -19,11 +19,11 @@ public class LugarTuristicoInterfaceParametersTest {
     @Parameterized.Parameters
     public static Iterable<Object[]>parameters(){
         List<Object[]> objects = new ArrayList<Object[]>();
-        objects.add(new Object[]{"Alameda", "Lugar no encontrado" ,"Estos son los resultados"});
+        objects.add(new Object[]{"Alameda", "Estos son los resultados","Estos son los resultados"});
         objects.add(new Object[]{"Carolina","Lugar no encontrado", "Lugar no encontrado"});
         objects.add(new Object[]{"Panecillo","Estos son los resultados" ,"Estos son los resultados"});
-        objects.add(new Object[]{"", "Lugar no encontrado" ,"Estos son los resultados"});
-        objects.add(new Object[]{"Santo Domingo", "Lugar no encontrado"});
+        objects.add(new Object[]{"", "Lugar no encontrado" ,"Lugar no encontrado"});
+        objects.add(new Object[]{"Santo Domingo", "Lugar no encontrado", "Lugar no encontrado"});
         objects.add(new Object[]{"San Francisco", "Estos son los resultados" ,"Estos son los resultados"});
         return objects;
     }
