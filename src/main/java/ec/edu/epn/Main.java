@@ -96,7 +96,35 @@ public class Main {
             System.out.println("Informacion del Lugar ->" + lugares[i].toString());
         }
 
+
+        System.out.println("-------------------- CAMBIOS REALIZADOS ------------------ ");
+
+        Administrador administrador = new Administrador();
+        System.out.println("NUEVO ADMINISTRADOR \n");
+        administrador.registrarAdministrador("1725996332", "Pedro Perez", "El condado", "0983333432", "pedro@hotmail.com");
+        System.out.println("Nuevo administrador -> " + administrador.toString());
+
+        Cliente cliente = new Cliente();
+        System.out.println(" NUEVO CLIENTE \n ");
+        cliente.registrarCliente("1725969502", "Juan Perozo", "El Inca",
+                "0989765641", "juan@homail.com");
+        System.out.println("Nuevo cliente -> " + cliente.toString());
+
+
+        LugarTuristico lugar =  new LugarTuristico();
+        System.out.println(" NUEVO LUGAR TURISTICO \n ");
+        lugar.registrarLugarTuristico("Molinuco",
+                "cascadas",
+                "8 - 20",
+                "martes -domingo",
+                "Sur de Quito",
+                (float) 4.9,
+                medidasLugar5,
+                "Excelente lugar buenas medidas de bioseguridad demasiado entretenido");
+
+        System.out.println("Nuevo Lugar -> " + lugar.toString());
     }
+
 
 
 
